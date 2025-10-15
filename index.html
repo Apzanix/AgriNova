@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AgriNova — Modern Agriculture Solutions</title>
+    <meta name="description"
+        content="AgriNova — sustainable, tech-driven agricultural solutions for modern farms. Responsive demo with interactive navbar, hero slider, live chat, WhatsApp and more." />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container nav">
+            <div class="brand">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Logo" class="logo-img">
+                </a>
+
+            </div>
+            <nav aria-label="Main navigation">
+                <div class="nav-links" role="menubar">
+                    <a role="menuitem" href="#home">Home</a>
+                    <a role="menuitem" href="#services">Services</a>
+                    <a role="menuitem" href="#solutions">Solutions</a>
+                    <a role="menuitem" href="#insights">Insights</a>
+                    <a role="menuitem" href="#contact">Contact</a>
+                </div>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                <span class="bars"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true">
+        <div class="mobile-panel" role="dialog" aria-label="Mobile menu">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+                <div style="display:flex;gap:12px;align-items:center">
+                    <div class="logo">AN</div><strong>AgriNova</strong>
+                </div>
+                <button id="closeMobile" aria-label="Close menu"
+                    style="border:none;background:transparent;font-size:20px">✕</button>
+            </div>
+            <nav class="mobile-links" id="mobileLinks" aria-label="Mobile navigation">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#insights">Insights</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="container" id="home">
+
+
+        <!-- HERO -->
+        <section class="hero" aria-label="Hero">
+            <div class="hero-left" style="text-align:center">
+                <span class="eyebrow">Trusted by 4,000+ farms</span>
+                <h1 style="font-size:48px;line-height:1.2;margin:16px 0">Grow smarter — technology & nature in harmony
+                </h1>
+                <p class="lead" style="font-size:18px;line-height:1.6">AgriNova combines precision sensors, satellite
+                    insights, and regenerative practices so you can increase yields, reduce water use, and build
+                    resilient soils.</p>
+
+                <div class="features" style="justify-content:center">
+                    <div class="feature"><i class="fa-solid fa-satellite-dish"></i>
+                        <div style="margin-left:8px"><strong>Precision Data</strong>
+                            <div class="muted">Real-time field telemetry</div>
+                        </div>
+                    </div>
+                    <div class="feature"><i class="fa-solid fa-water"></i>
+                        <div style="margin-left:8px"><strong>Smart Irrigation</strong>
+                            <div class="muted">Cut water use by up to 40%</div>
+                        </div>
+                    </div>
+                    <div class="feature"><i class="fa-solid fa-seedling"></i>
+                        <div style="margin-left:8px"><strong>Regenerative</strong>
+                            <div class="muted">Soil-first methods</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-right" aria-hidden="false">
+                <div class="slides" id="slides" aria-live="polite">
+                    <article class="slide" data-index="0" data-active="true" aria-hidden="false">
+                        <div class="bg" style="background-image:url('img/210.png')"></div>
+                        <div class="overlay"></div>
+                        <div class="card">
+                            <h3>Precision Crop Monitoring</h3>
+                            <p class="muted">Satellite and drone analytics detect stress earlier so you can act before
+                                yield is affected.</p>
+                        </div>
+                    </article>
+
+                    <article class="slide" data-index="1" data-active="false" aria-hidden="true">
+                        <div class="bg" style="background-image:url('img/212.png')"></div>
+                        <div class="overlay"></div>
+                        <div class="card">
+                            <h3>Water Management Optimization</h3>
+                            <p class="muted">Smart irrigation schedules reduce waste and keep crops hydrated at the
+                                right time.</p>
+                        </div>
+                    </article>
+
+                    <article class="slide" data-index="1" data-active="false" aria-hidden="true">
+                        <div class="bg" style="background-image:url('img/213.png')"></div>
+                        <div class="overlay"></div>
+                        <div class="card">
+                            <h3>Efficient Irrigation Control</h3>
+                            <p class="muted">Leverage smart irrigation systems to optimize water usage, prevent
+                                overwatering.</p>
+
+                        </div>
+                    </article>
+
+                    <article class="slide" data-index="1" data-active="false" aria-hidden="true">
+                        <div class="bg" style="background-image:url('img/211.png')"></div>
+                        <div class="overlay"></div>
+                        <div class="card">
+                            <h3>Intelligent Water Management</h3>
+                            <p class="muted">Monitor soil moisture and automate irrigation schedules to conserve water,
+                                reduce costs and maintain consistent crop growth.</p>
+
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT US PAGE -->
+        <section id="about" class="container" style="padding:60px 20px;">
+            <div style="text-align:center; margin-bottom:40px;">
+                <h2 style="font-size:36px; font-weight:700; margin-bottom:12px;">About AgriNova</h2>
+                <p class="muted" style="font-size:18px; max-width:720px; margin:auto;">
+                    Driving innovation in agriculture through technology, sustainability, and practical solutions for
+                    modern farms.
+                </p>
+            </div>
+
+            <div
+                style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap:40px; align-items:center;">
+
+                <!-- Image -->
+                <div style="border-radius:16px; overflow:hidden;">
+                    <img src="img/214.png" alt="Modern Farming"
+                        style="width:100%; display:block; object-fit:cover; height:100%;">
+                </div>
+
+                <!-- Text Content -->
+                <div>
+                    <h3 style="font-size:28px; font-weight:600; margin-bottom:12px;">Our Mission</h3>
+                    <p class="muted" style="margin-bottom:20px;">
+                        At AgriNova, we aim to empower farmers with cutting-edge technology and sustainable practices.
+                        Our mission is to maximize yield, reduce resource usage, and ensure resilient and productive
+                        soils.
+                    </p>
+
+                    <h3 style="font-size:28px; font-weight:600; margin-bottom:12px;">Our Vision</h3>
+                    <p class="muted" style="margin-bottom:20px;">
+                        To create a future where agriculture thrives through smart innovation,
+                        enabling farmers to adapt to challenges, increase efficiency, and embrace
+                        environmentally-friendly practices.
+                    </p>
+
+                    <h3 style="font-size:28px; font-weight:600; margin-bottom:12px;">Core Values</h3>
+                    <ul style="list-style:disc inside; color:var(--muted); font-size:16px; line-height:1.8;">
+                        <li>Innovation: Constantly improving agricultural technology.</li>
+                        <li>Sustainability: Prioritizing environmental and soil health.</li>
+                        <li>Collaboration: Working closely with farmers and communities.</li>
+                        <li>Transparency: Sharing data and insights for smarter decisions.</li>
+                        <li>Excellence: Delivering reliable, high-quality solutions.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="services-section" id="services" aria-label="Services">
+            <div class="services-header">
+                <h2>Our Services</h2>
+                <p class="muted">Flexible, technology-driven solutions for modern farming.</p>
+            </div>
+
+            <div class="services-tabs" role="tablist">
+                <button class="active" role="tab" aria-selected="true" data-tab="iot">IoT Farming</button>
+                <button role="tab" aria-selected="false" data-tab="analytics">Analytics</button>
+                <button role="tab" aria-selected="false" data-tab="advisory">Advisory</button>
+            </div>
+
+            <div class="tab-contents">
+                <div class="tab-content active" id="iot">
+                    <div class="tab-card">
+                        <h4>Sensor Networks</h4>
+                        <p>
+                            Track moisture, temperature, and crop health in real-time.
+                            Receive alerts on anomalies, monitor soil nutrients, and optimize planting schedules.
+                            Our integrated sensors help reduce resource waste and improve overall farm productivity.
+                            Gain insights into micro-climates across different plots, detect pest or disease outbreaks
+                            early,
+                            and make informed decisions for fertilization and harvesting. These networks provide
+                            seamless data
+                            collection for smarter farm management and better ROI.
+                        </p>
+                    </div>
+                    <div class="tab-card">
+                        <h4>Automated Irrigation</h4>
+                        <p>
+                            Schedule water usage based on live field data to reduce waste.
+                            Optimize irrigation timing and amounts, conserve water, prevent overwatering,
+                            and ensure crops receive consistent hydration for maximum yield.
+                            Integrates with weather forecasts to adjust watering automatically,
+                            reducing operational costs and improving water-use efficiency.
+                            Farmers can remotely monitor and control irrigation via mobile apps, ensuring precise
+                            resource management.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="analytics">
+                    <div class="tab-card">
+                        <h4>Satellite Insights</h4>
+                        <p>
+                            Visualize crop patterns, soil health, and potential stress zones.
+                            Monitor vegetation growth, detect nutrient deficiencies, track seasonal changes,
+                            and make data-driven decisions to boost farm productivity and sustainability.
+                            Satellite imagery enables detection of irrigation gaps, disease outbreaks, and soil erosion
+                            patterns.
+                            Combined with AI analysis, these insights help plan crop rotations, improve yields, and
+                            minimize losses.
+                        </p>
+                    </div>
+                    <div class="tab-card">
+                        <h4>Predictive Modeling</h4>
+                        <p>
+                            Forecast yields and risks using AI-driven analytics.
+                            Analyze historical data, weather patterns, and soil conditions to predict crop performance,
+                            optimize planting schedules, and minimize losses due to pests, diseases, or climate
+                            fluctuations.
+                            Scenario simulations allow farmers to evaluate different strategies before implementation,
+                            improving decision-making and operational resilience.
+                            Gain advanced insights into market trends, expected harvest volumes, and resource allocation
+                            for smarter planning.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="advisory">
+                    <div class="tab-card">
+                        <h4>Expert Consulting</h4>
+                        <p>
+                            Tailored advice to optimize operations sustainably.
+                            Our experts provide actionable strategies for crop rotation, soil health improvement, water
+                            management,
+                            and resource-efficient practices to boost productivity while preserving the environment.
+                            Personalized farm assessments help identify inefficiencies and implement best practices.
+                            Receive guidance on organic farming techniques, pest management, and climate-resilient
+                            strategies
+                            to maximize long-term profitability.
+                        </p>
+                    </div>
+                    <div class="tab-card">
+                        <h4>Workshops & Training</h4>
+                        <p>
+                            Empowering farmers with knowledge on modern techniques.
+                            Our sessions cover precision farming, smart irrigation, soil health management,
+                            and the latest agri-tech innovations to help farmers increase yield sustainably.
+                            Hands-on workshops, live demonstrations, and digital resources ensure practical learning.
+                            Build local expertise, foster community knowledge sharing, and adopt cutting-edge practices
+                            for sustainable agriculture and improved livelihoods.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Column 1: Brand -->
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="img/logo2.png" alt="AgriNova" />
+                </div>
+                <p>Empowering farms through technology, innovation, and sustainable solutions. From IoT-based monitoring
+                    to data analytics — we help you grow smarter.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#insights">Insights</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Our Services -->
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#services">IoT Farming</a></li>
+                    <li><a href="#services">Data Analytics</a></li>
+                    <li><a href="#services">Agri Advisory</a></li>
+                    <li><a href="#services">Smart Irrigation</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Column 5: Contact Info -->
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-envelope"></i> info@agrinova.com</li>
+                    <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra, India</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 AgriNova. All rights reserved. | Designed with <i class="fa-solid fa-heart"></i> by Livoso</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <div class="floating">
+        <div class="fab whatsapp" onclick="window.open('https://wa.me/919876543210','_blank')"
+            aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></div>
+        <div class="fab" id="chatBtn" aria-label="Open live chat"><i class="fa-solid fa-comment"></i></div>
+    </div>
+
+    <div class="back" id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <!-- CHAT WIDGET -->
+    <div class="chat" id="chatWidget" aria-hidden="true">
+        <div class="header" style="display:flex;justify-content:space-between;align-items:center">
+            <div><i class="fa-solid fa-robot"></i><strong>AgriBot</strong></div>
+            <button id="closeChat" aria-label="Close chat"
+                style="border:none;background:transparent;font-size:18px;cursor:pointer">✕</button>
+        </div>
+        <div class="body" id="chatBody">
+            <div class="msg bot">Hi! How can I assist you today?</div>
+        </div>
+        <div class="input">
+            <input type="text" id="chatInput" placeholder="Type a message..." />
+            <button id="sendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
