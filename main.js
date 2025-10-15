@@ -84,3 +84,53 @@
         closeChat.addEventListener('click', () => {
             chatWidget.classList.remove('open');
         });
+
+
+        // HERO1 SECTION 
+
+        const myheroSlides = document.querySelectorAll('.myhero-slide');
+const myheroIndicators = document.querySelectorAll('.myhero-indicator');
+let myheroCurrent = 0;
+
+function showMyheroSlide(index) {
+  myheroSlides.forEach((slide, i) => {
+    slide.classList.toggle('myhero-active', i === index);
+    myheroIndicators[i].classList.toggle('myhero-active', i === index);
+  });
+  myheroCurrent = index;
+}
+
+// Auto slide
+let myheroSlideInterval = setInterval(() => {
+  let next = (myheroCurrent + 1) % myheroSlides.length;
+  showMyheroSlide(next);
+}, 5000);
+
+// Navigation
+document.querySelector('.myhero-prev').addEventListener('click', () => {
+  let prev = (myheroCurrent - 1 + myheroSlides.length) % myheroSlides.length;
+  showMyheroSlide(prev);
+  resetMyheroInterval();
+});
+
+document.querySelector('.myhero-next').addEventListener('click', () => {
+  let next = (myheroCurrent + 1) % myheroSlides.length;
+  showMyheroSlide(next);
+  resetMyheroInterval();
+});
+
+// Indicators
+myheroIndicators.forEach((btn, idx) => {
+  btn.addEventListener('click', () => {
+    showMyheroSlide(idx);
+    resetMyheroInterval();
+  });
+});
+
+function resetMyheroInterval() {
+  clearInterval(myheroSlideInterval);
+  myheroSlideInterval = setInterval(() => {
+    let next = (myheroCurrent + 1) % myheroSlides.length;
+    showMyheroSlide(next);
+  }, 5000);
+}

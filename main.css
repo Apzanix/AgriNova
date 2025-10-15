@@ -159,6 +159,142 @@ header {
     top: 7px
 }
 
+/* HERO1 */
+.myhero {
+  position: relative;
+  height: 60vh; /* reduced height */
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.myhero-slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.myhero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.myhero-slide.myhero-active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.myhero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1;
+}
+
+.myhero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: #fff;
+  max-width: 700px;
+}
+
+.myhero-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.myhero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+}
+
+.myhero-cta-btn {
+  display: inline-block;
+  background: #12a04a;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.myhero-cta-btn:hover {
+  background: #1f8a4c;
+}
+
+.myhero-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 4;
+  padding: 0 20px;
+}
+
+.myhero-nav button {
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.myhero-nav button:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+.myhero-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: flex;
+  gap: 12px;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+
+.myhero-indicator {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.myhero-indicator.myhero-active {
+  background: #12a04a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .myhero-content h1 {
+    font-size: 2rem;
+  }
+  .myhero-content p {
+    font-size: 1rem;
+  }
+}
 /* ===== HERO ===== */
 .hero {
     display: grid;
