@@ -88,23 +88,23 @@
 
         // HERO1 SECTION 
 
-//         const myheroSlides = document.querySelectorAll('.myhero-slide');
-// const myheroIndicators = document.querySelectorAll('.myhero-indicator');
-// let myheroCurrent = 0;
+        const myheroSlides = document.querySelectorAll('.myhero-slide');
+const myheroIndicators = document.querySelectorAll('.myhero-indicator');
+let myheroCurrent = 0;
 
-// function showMyheroSlide(index) {
-//   myheroSlides.forEach((slide, i) => {
-//     slide.classList.toggle('myhero-active', i === index);
-//     myheroIndicators[i].classList.toggle('myhero-active', i === index);
-//   });
-//   myheroCurrent = index;
-// }
+function showMyheroSlide(index) {
+  myheroSlides.forEach((slide, i) => {
+    slide.classList.toggle('myhero-active', i === index);
+    myheroIndicators[i].classList.toggle('myhero-active', i === index);
+  });
+  myheroCurrent = index;
+}
 
 // Auto slide
-// let myheroSlideInterval = setInterval(() => {
-//   let next = (myheroCurrent + 1) % myheroSlides.length;
-//   showMyheroSlide(next);
-// }, 5000);
+let myheroSlideInterval = setInterval(() => {
+  let next = (myheroCurrent + 1) % myheroSlides.length;
+  showMyheroSlide(next);
+}, 5000);
 
 // Navigation
 document.querySelector('.myhero-prev').addEventListener('click', () => {
