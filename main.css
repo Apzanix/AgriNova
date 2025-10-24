@@ -510,6 +510,25 @@ p.lead {
 .tab-card:hover {
     transform: translateY(-4px)
 }
+.tab-card-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.tab-card-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tab-card {
+    flex: 1;
+}
 
 /* stripe CTA */
 .stripe {
