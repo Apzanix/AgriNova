@@ -294,6 +294,9 @@ header {
   .myhero-content p {
     font-size: 1rem;
   }
+  .myhero-slides {
+    height: 64%;
+  }
 }
 /* ===== HERO ===== */
 .hero {
