@@ -309,19 +309,16 @@ header {
 
 .hero-left {
     text-align: center;
-    /* Center heading and features */
 }
 
 .hero-left h1 {
     font-size: 48px;
-    /* Bigger font for the main heading */
     line-height: 1.2;
     margin: 16px 0;
 }
 
 .features {
     justify-content: center;
-    /* Center the feature cards */
 }
 
 
@@ -446,7 +443,7 @@ p.lead {
     color: #fff
 }
 
-/* ===== SERVICES (tabbed) ===== */
+/* ===== SERVICES ===== */
 .services-section {
     padding: 28px 0
 }
@@ -620,7 +617,6 @@ p.lead {
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
-    /* Rounded square */
     transition: all 0.3s ease;
 }
 
@@ -636,8 +632,7 @@ p.lead {
     gap: 12px;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 12px;
-    /* pushes icons slightly down */
+    margin-top: 12px
 }
 
 
@@ -668,9 +663,8 @@ p.lead {
 .footer-flex {
     display: flex;
     gap: 40px;
-    /* space between Resources and Contact */
     flex-wrap: wrap;
-    /* ensures responsiveness on small screens */
+    
 }
 
 /* Responsive adjustments */
